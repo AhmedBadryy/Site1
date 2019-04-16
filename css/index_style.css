@@ -1,0 +1,225 @@
+
+.spinner {
+  margin: 200px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #fff;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+#loading
+{
+	width: 100%;
+	height: 100%;
+	background-color: #09c;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 36545646546;
+}
+.customNav
+{
+	transition: all 0.5s;
+}
+#btnUp
+{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 6546546;
+}
+body
+{
+    font-family: "segoe ui light";
+	overflow: hidden;
+}
+#options-container
+{
+	position: fixed;
+	top: 100px;
+	left: 0px;
+	z-index: 654654;
+}
+#options-box
+{
+	background-color: #ccc;
+	float: left;
+	padding: 15px;
+}
+#options-box .img-change
+{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+#options-box ul li
+{
+	width: 25px;
+	height: 25px;
+	background-color: orange;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#toggleBtn
+{
+	background-color: teal;
+	color: #fff;
+	padding: 10px;
+	float: left;
+	cursor: pointer;
+}
+
+
+#home
+{
+    overflow: auto;
+    height: 630px;
+    background-size: 100% 100%;
+	background-image: url(../images/bg2.jpg)
+}
+.navbar-brand img
+{
+    width: 70px;
+    height: 50px;
+}
+
+
+.slide
+{
+    width: 80%;
+}
+.carousel-indicators li
+{
+    height: 30px;
+    border-radius: 50%;
+}
+.test
+{
+    color: red;
+    font-size: 50px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+.test:hover
+{
+    color: gray;
+    background-color: red;
+}
+
+.item
+{
+    background-color: #09c;
+}
+
+.member
+{
+    position: relative;
+}
+.member .mem-caption
+{
+    background-color: #0591b1;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 10px;
+}
+.member .mem-caption:before
+{
+    content: "";
+    background-color: #0591b1;
+    height: 100%;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    right: 90%;
+}
+
+.features
+{
+    background-image: url(../images/bg2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.features .feature
+{
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 20px;
+
+}
+
+#profile img
+{
+	animation-name: rotateImage;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-play-state: paused;
+}
+
+
+@keyframes rotateImage
+{
+	0%{transform: rotate(0deg)}
+	100%{transform: rotate(360deg)}
+}
+
+
+
+
+
+
+
+
